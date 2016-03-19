@@ -17,16 +17,14 @@ Gem::Specification.new do |s|
   s.test_files = Dir['spec/**/*']
 
   s.add_dependency 'rails', '>= 3.0.0'
-  s.add_dependency 'activeadmin', '>= 0.4.0'
   s.add_dependency 'ejs'
-
+  s.add_runtime_dependency 'activeadmin', '>= 0.4.0', '>= 0.4.0'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'rspec', '~> 2.12.0'
   s.add_development_dependency 'rspec-rails', '~> 2.12.0'
   s.add_development_dependency 'factory_girl_rails'
   s.add_development_dependency 'database_cleaner', '~> 0.9.1'
   s.add_development_dependency 'capybara', '~> 1.1.4'
-  s.add_runtime_dependency 'activeadmin', '>= 0.4.0'
   s.add_development_dependency 'poltergeist', '~> 1.0.2'
   s.add_development_dependency 'faker'
 
