@@ -5106,6 +5106,16 @@ wysihtml5.dom.parse = (function() {
         return attributeValue.replace(REG_EXP, "");
       };
     })(),
+
+    // Just copies the attribute untouched.
+    passThrough: (function() {
+      return function(attributeValue) {
+        if (!attributeValue) {
+          return "";
+        }
+        return attributeValue;
+      };
+    })(),
     
     numbers: (function() {
       var REG_EXP = /\D/g;
